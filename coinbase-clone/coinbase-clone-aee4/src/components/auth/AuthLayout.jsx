@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/icons/coinbase-logo.svg';
+import WarningBanner from '../common/WarningBanner';
 
 const AuthLayout = ({ children, title, description }) => {
   return (
     <div className="min-h-screen bg-white">
+      <WarningBanner />
       {/* Top logo */}
       <div className="px-8 pt-6">
         <Link to="/">

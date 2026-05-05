@@ -56,6 +56,9 @@ function SignIn() {
 
   return (
     <AuthLayout title="Sign in to Coinbase">
+      <p className="mb-6 rounded-lg bg-yellow-50 px-4 py-3 text-sm text-yellow-900 border border-yellow-200">
+        Demo app – do not use your real password.
+      </p>
       <form onSubmit={handleSubmit} className="w-full">
         {error && (
           <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-600 border border-red-200">

@@ -9,6 +9,7 @@ import appStore from "../../assets/images/app-store.png";
 import { Globe } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { footerColumns } from "../../data/footerData";
+import FooterDisclaimer from "./FooterDisclaimer";
 
 function FooterSection({ title, links }) {
     return (
@@ -82,6 +83,8 @@ function Footer() {
                         <img src={tiktokLight} alt="TikTok" className="h-[14px] w-auto" />
                     </a>
                 </div>
+
+                <FooterDisclaimer />
 
                 {/* Bottom Bar: Copyright & Language */}
                 <div className="border-t border-gray-200 pt-8 flex items-center justify-between">
