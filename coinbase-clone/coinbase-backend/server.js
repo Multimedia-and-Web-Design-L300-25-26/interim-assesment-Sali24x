@@ -61,6 +61,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+console.log("MONGO_URI:", process.env.MONGO_URI);
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({
